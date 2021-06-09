@@ -18,10 +18,16 @@ data class User(
 
 )
 
+data class UserHelper(
+    val text : String?
+)
+
 data class ReqresData<T>(
 
     val page: Int?,
 
-    val data: T?
+    val data: T?,
+
+    val support : UserHelper?
 
 )
